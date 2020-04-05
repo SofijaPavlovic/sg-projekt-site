@@ -1,6 +1,5 @@
 .Project {
-    width: 100%;
-    padding: 10px 30px;
+    margin: 20px;
     border: 1px solid red;
     display: flex;
     flex-flow: row;
@@ -8,7 +7,7 @@
 
 
 .ProjectText {
-    margin: 10px 20px;
+    
 }
 
 .ProjectText p {
@@ -17,5 +16,4 @@
 
 .Project div {
     width: 50%;
-    padding: 10px;
 }

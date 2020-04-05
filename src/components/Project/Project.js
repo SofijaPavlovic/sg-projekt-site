@@ -3,6 +3,7 @@ import './Project.css'
 import Image from '../../assets/images/project1.jpg'
 
 const project = (props) => (
+    
     <div className="Project">
         <div className="ProjectText">
             <h3>Naslov projekta</h3>
@@ -14,7 +15,7 @@ const project = (props) => (
             in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
              with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p></div>
         <div>
-            <img src={Image} alt="Project1" width="20%" />
+            <img src={Image} alt="Project1" width="100%" />
         </div>
     </div>
 );
