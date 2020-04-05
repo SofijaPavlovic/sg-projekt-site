@@ -1,10 +1,10 @@
 import React from 'react';
-import burgerLogo from '../../assets/images/burger_logo.png';
+import SGLogo from '../../assets/images/logo2.png';
 import './Logo.css';
 
 const logo =(props) => (
     <div className="Logo" style={{height: props.height}}>
-        <img src={burgerLogo} alt="MyBurger"/>
+        <img src={SGLogo} alt="SG-PROJEKT-Logo"/>
     </div>    
 );
 

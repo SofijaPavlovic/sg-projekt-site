@@ -3,6 +3,7 @@ import Aux from '../../hoc/Auxilary';
 import './Layout.css';
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
+import Project from '../Project/Project';
 
 class Layout extends Component {
     state = {
@@ -26,6 +27,7 @@ class Layout extends Component {
             <main className="Content">
                 {this.props.children}
             </main>
+            <Project />
         </Aux>
         )
     }
