@@ -4,6 +4,7 @@ import './Layout.css';
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
 import Project from '../Project/Project';
+import Contact from '../Contact/Contact';
 import { Route, Switch } from 'react-router-dom';
 
 class Layout extends Component {
@@ -32,7 +33,7 @@ class Layout extends Component {
                 <Route path={"/"} exact />
                 <Route path={"/onama"} exact />
                 <Route path={"/projekti"} exact component={Project} />
-                <Route path={"/kontakt"} exact />
+                <Route path={"/kontakt"} exact component={Contact}/>
             </Switch>
 
         </Aux>
