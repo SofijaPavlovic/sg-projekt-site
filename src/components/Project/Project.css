@@ -1,0 +1,19 @@
+.Project {
+    margin: 20px;
+    border: 1px solid red;
+    display: flex;
+    flex-flow: row;
+}
+
+
+.ProjectText {
+    
+}
+
+.ProjectText p {
+    font-size: 20px;
+}
+
+.Project div {
+    width: 50%;
+}
