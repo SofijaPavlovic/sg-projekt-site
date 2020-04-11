@@ -3,8 +3,9 @@ import Aux from '../../hoc/Auxilary';
 import './Layout.css';
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
-import Project from '../Project/Project';
+import Projects from '../Pages/Projects/Projects';
 import { Route, Switch } from 'react-router-dom';
+import Home from '../Pages/Home/Home';
 
 class Layout extends Component {
     state = {
@@ -29,9 +30,9 @@ class Layout extends Component {
                 {this.props.children}
             </main>
             <Switch>
-                <Route path={"/"} exact />
+                <Route path={"/home"} exact component={Home}/>
                 <Route path={"/onama"} exact />
-                <Route path={"/projekti"} exact component={Project} />
+                <Route path={"/projekti"} exact component={Projects} />
                 <Route path={"/kontakt"} exact />
             </Switch>
 
