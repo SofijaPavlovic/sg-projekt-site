@@ -30,8 +30,9 @@ class Layout extends Component {
             </main>
             <Switch>
                 <Route path={"/"} exact />
-                <Route path={"/projects"} exact />
-                <Route path={"/:id"} exact component={Project} />
+                <Route path={"/onama"} exact />
+                <Route path={"/projekti"} exact component={Project} />
+                <Route path={"/kontakt"} exact />
             </Switch>
 
         </Aux>
