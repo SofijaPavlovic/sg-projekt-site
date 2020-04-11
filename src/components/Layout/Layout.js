@@ -30,7 +30,7 @@ class Layout extends Component {
                 {this.props.children}
             </main>
             <Switch>
-                <Route path={"/home"} exact component={Home}/>
+                <Route path={"/"} exact component={Home}/>
                 <Route path={"/onama"} exact />
                 <Route path={"/projekti"} exact component={Projects} />
                 <Route path={"/kontakt"} exact />
