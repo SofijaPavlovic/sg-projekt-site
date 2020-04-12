@@ -4,10 +4,10 @@ import './Layout.css';
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
 import Projects from '../Pages/Projects/Projects';
-import Contact from '../Contact/Contact';
 
 import { Route, Switch } from 'react-router-dom';
 import Home from '../Pages/Home/Home';
+import Contact from '../Pages/Contact/Contact';
 
 class Layout extends Component {
     state = {

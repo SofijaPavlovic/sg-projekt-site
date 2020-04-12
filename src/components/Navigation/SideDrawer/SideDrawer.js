@@ -4,6 +4,7 @@ import NavigationItems from '../NavigationItems/NavigationItems';
 import './SideDrawer.css';
 import Backdrop from '../../UI/Backdrop/Backdrop';
 import Aux from '../../../hoc/Auxilary';
+import NavigationContact from '../NavigationItems/NavigationContact/NavigationContact';
 
 const sideDrawer = (props) => {
     let attachedClasses = ["SideDrawer", "Close"];
@@ -27,8 +28,9 @@ const sideDrawer = (props) => {
                         </div>
                     </div>
                 </div>
-                <nav>
+                <nav onClick={props.closed}>
                     <NavigationItems />
+                    <NavigationContact />
                 </nav>
             </div>
         </Aux>

@@ -4,7 +4,11 @@ import Project from './Project/Project';
 
 const projects = () => {
     return (
-        <Project />
+        <React.Fragment>
+            <Project />
+            <Project />
+            <Project />
+        </React.Fragment>
     );
 }
 
