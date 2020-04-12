@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 
 const navigationItem = (props) => (
     <li className="NavigationItem">
-        <NavLink 
-            exact
+        <NavLink
+            exact 
             to={props.link}
             >{props.children}
         </NavLink>

@@ -22,7 +22,8 @@
     padding-top: 20px;
     padding-left: 20px;
     display: inline-block;
-    width: 61%;
+    width: 60%;
+    height:400px;
 }
 
 @media (max-width: 950px) {
@@ -48,3 +49,4 @@
         width: 95%;
     }
 }
+
