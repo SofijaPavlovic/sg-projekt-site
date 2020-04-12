@@ -1,0 +1,13 @@
+.NavigationContact {
+    margin-top: 20px;
+}
+
+.NavigationContact div{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+.NavigationContact a{
+    text-decoration: none;
+}
