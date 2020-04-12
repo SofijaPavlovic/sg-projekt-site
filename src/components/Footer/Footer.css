@@ -1,0 +1,48 @@
+.Footer {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    margin-right: 0;
+    background-color: #3f3f3f;
+    color: white;
+    display: block;
+    justify-content: space-between;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+.Row:first-child {
+    padding: 10px 2%;
+}
+.Row:last-child {
+    height: 35px;
+    background-color: #272727;
+    color: black;
+    margin-bottom: 0;
+    text-align: center;
+}
+.Column {
+    display: block;
+    width: auto;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+@media (min-width: 800px) {
+    .Row {
+        display: block;
+        /*width: 100%;*/
+    }
+    .Row:first-child {
+        padding: 10px 5%;
+    }
+    
+    .Column {
+        display: inline-block;
+        vertical-align: top;
+        width: 33%;
+        height: 250px;
+    }
+}

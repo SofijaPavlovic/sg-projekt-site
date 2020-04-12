@@ -22,7 +22,7 @@
     padding-top: 20px;
     padding-left: 20px;
     display: inline-block;
-    width: 60%;
+    width: 61%;
 }
 
 @media (max-width: 950px) {
@@ -35,11 +35,16 @@
     }
 }
 @media (max-width: 800px) {
+    .Contact {
+        margin: 0 2%;  
+    }
+    .Informations {
+        padding-left: 3px;
+    }
     .Map {
         vertical-align: top;
         padding-top: 20px;
-        padding-left: 20px;
-        display: inline-block;
-        width: 91%;
+        padding-left: 3px;
+        width: 95%;
     }
 }
