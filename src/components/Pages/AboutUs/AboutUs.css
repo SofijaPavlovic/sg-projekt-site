@@ -1,0 +1,63 @@
+
+.ServicesLayout {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.Services {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.Services:first-child {
+    margin-top: 78px;
+}
+
+.Services h3 {
+    font-size: 32px;
+}
+
+.Services div {
+    display: inline-block;
+    width: 200px;
+    background-color: rgb(202, 184, 182);
+    margin:10px 10px;
+    height: 30px;
+    border-radius: 20px;
+    position: relative;
+    
+}
+.Services div p{
+    text-align: center;
+    position: relative;
+    top: -10px;
+}
+
+.Services div:hover {
+    background-color: silver;
+}
+
+.AboutUs {
+    margin: 0 5%;
+    color: #3f3f3f;
+    
+}
+
+.AboutUs p {
+    font-size: 32px;
+    padding: 0 16px;
+    font-weight: bolder;
+    
+}
+.AboutUs div{
+    padding: 0 16px;
+}
+
+.BreakLine {
+    border-top: 1px solid #D3D3D3;
+    margin-bottom: 16px;
+    margin-top: -16px;
+    
+}
