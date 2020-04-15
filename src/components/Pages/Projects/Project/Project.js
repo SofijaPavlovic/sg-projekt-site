@@ -1,23 +1,52 @@
 import React from 'react';
 import './Project.css'
 import Image from '../../../../assets/images/project1.jpg';
+import Aux from '../../../../hoc/Auxilary';
 
-const project = (props) => (
-    
-    <div className="Project">
+const project = (props) => {
+
+    const isOdd = (index) => {
+        return (index % 2) ? true : false;
+    }
+
+    const getProject = () =>{
+        if (isOdd(props.index) & !props.isSmallDevice) {
+            return (
+                <Aux>
+                    {img}
+                    {text}
+                </Aux>
+            );
+        } else {
+            return (
+                <Aux>
+                    {text}
+                    {img}
+                </Aux>
+            );
+        }
+    }
+
+    const text = (
         <div className="ProjectText">
-            <h3>Naslov projekta</h3>
-            <p>Lorem Ipsum is simply dummy
-            text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not only five centuries, but
-            also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
-            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-             with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p></div>
-        <div>
-            <img src={Image} alt="Project1" width="100%" />
+            <h3>{props.title}</h3>
+            <p>{props.text}</p>
+        </div>);
+
+    const img = (
+        <div className="ProjectImage">
+            <img  src={Image} alt="Project1" />
         </div>
-    </div>
-);
+    );
+
+    let project = getProject();
+
+    return (
+        <div className="Project">
+            {project}
+        </div>
+
+    );
+};
 
 export default project;

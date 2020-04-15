@@ -10,6 +10,7 @@ import Projects from '../Pages/Projects/Projects';
 import { Route, Switch } from 'react-router-dom';
 import Home from '../Pages/Home/Home';
 import Contact from '../Pages/Contact/Contact';
+import AboutUs from '../Pages/AboutUs/AboutUs';
 
 class Layout extends Component {
     state = {
@@ -35,7 +36,7 @@ class Layout extends Component {
             </main>
             <Switch>
                 <Route path={"/"} exact component={Home} />
-                <Route path={"/onama"} exact />
+                <Route path={"/onama"} exact component={AboutUs} />
                 <Route path={"/projekti"} exact component={Projects} />
                 <Route path={"/kontakt"} exact component={Contact}/>
 

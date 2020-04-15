@@ -1,15 +1,37 @@
 .Project {
     margin: 20px;
-    border: 1px solid red;
-    display: flex;
-    flex-flow: row;
+    /*border: 1px solid red;
+    background-color: salmon;*/
+    
+    
 }
 
 
+
+
 .ProjectText p {
+    /*background-color: purple;*/
     font-size: 20px;
 }
 
 .Project div {
     width: 50%;
+    display: inline-block;
+    /*background-color: rosybrown;*/
+    position: relative;
+    vertical-align: middle;
+}
+
+.ProjectImage img{
+    margin: 5%;
+    width: 90%;
+
+}
+
+@media(max-width: 700px) {
+    .Project div {
+        /*border: 1px solid purple;*/
+        width: 100%;
+        
+    }
 }
