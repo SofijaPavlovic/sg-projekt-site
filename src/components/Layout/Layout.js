@@ -10,10 +10,29 @@ import Projects from '../Pages/Projects/Projects';
 import { Route, Switch } from 'react-router-dom';
 import Home from '../Pages/Home/Home';
 import Contact from '../Pages/Contact/Contact';
+import AboutUs from '../Pages/AboutUs/AboutUs';
+import axios from 'axios';
 
 class Layout extends Component {
     state = {
-        showSideDrawer: false
+        showSideDrawer: false,
+        contactInfo: null
+    }
+
+    componentDidMount() {
+        axios.get('https://sg-projekt-1cf54.firebaseio.com/contact.json')
+                .then(response => {
+                    let contactInfo = { 
+                        phone: response.data.phone.split(','),
+                        address: response.data.address.split(','),
+                        work: response.data.work.split(','),
+                        email: response.data.email.split(',')
+                    }
+                    this.setState({contactInfo: contactInfo});
+                })
+                .catch(error =>{
+                    console.log(error);
+                })
     }
 
     sideDrawerClosedHandler = () => {
@@ -29,15 +48,16 @@ class Layout extends Component {
             <Toolbar clicked={this.sideDrawerToggleHandler} />
             <SideDrawer
                 open={this.state.showSideDrawer}
-                closed={this.sideDrawerClosedHandler} />
+                closed={this.sideDrawerClosedHandler}
+                info={this.state.contactInfo} />
             <main className="Content">
                 {this.props.children}
             </main>
             <Switch>
                 <Route path={"/"} exact component={Home} />
-                <Route path={"/onama"} exact />
+                <Route path={"/onama"} exact component={AboutUs} />
                 <Route path={"/projekti"} exact component={Projects} />
-                <Route path={"/kontakt"} exact component={Contact}/>
+                <Route path={"/kontakt"} exact render={() => <Contact info={this.state.contactInfo} />}/>
 
             </Switch>
             <Footer/>

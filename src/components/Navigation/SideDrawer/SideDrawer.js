@@ -30,7 +30,7 @@ const sideDrawer = (props) => {
                 </div>
                 <nav onClick={props.closed}>
                     <NavigationItems />
-                    <NavigationContact />
+                    <NavigationContact info={props.info}/>
                 </nav>
             </div>
         </Aux>
