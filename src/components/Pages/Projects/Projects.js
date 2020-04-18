@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Project from './Project/Project';
-import './Projects.css';
+import classes from './Projects.module.css';
 import axios from 'axios';
 
 class Projects extends Component {
@@ -23,17 +23,19 @@ class Projects extends Component {
         if (this.state.projects != null) {
             projects = Object.keys(this.state.projects).map((project, i) => {
                 return (
-                    <Project
-                        isSmallDevice={window.innerWidth < 800 ? true: false}
-                        key={i}
-                        index={i}
-                        text={this.state.projects[project]['text']}
-                        title={this.state.projects[project]['title']} />
+                    <React.Fragment>
+                        <Project
+                            isSmallDevice={window.innerWidth < 800 ? true : false}
+                            key={i}
+                            index={i}
+                            text={this.state.projects[project]['text']}
+                            title={this.state.projects[project]['title']} />
+                    </React.Fragment>
                 )
             });
         }
         return (
-            <div className="Projects">
+            <div className={classes.Projects}>
                 {projects}
             </div>
 

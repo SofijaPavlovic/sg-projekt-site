@@ -1,5 +1,5 @@
 import React from 'react';
-import './Project.css'
+import classes from './Project.module.css'
 import Image from '../../../../assets/images/project1.jpg';
 import Aux from '../../../../hoc/Auxilary';
 
@@ -28,13 +28,13 @@ const project = (props) => {
     }
 
     const text = (
-        <div className="ProjectText">
+        <div className={classes.ProjectText}>
             <h3>{props.title}</h3>
             <p>{props.text}</p>
         </div>);
 
     const img = (
-        <div className="ProjectImage">
+        <div className={classes.ProjectImage}>
             <img  src={Image} alt="Project1" />
         </div>
     );
@@ -42,7 +42,7 @@ const project = (props) => {
     let project = getProject();
 
     return (
-        <div className="Project">
+        <div className={classes.Project}>
             {project}
         </div>
 
