@@ -6,11 +6,11 @@ const footer = (props) => (
             <div className="Row">
                 <div className="Column">
                     <h3>Usluge</h3>
-                    <p>Projektovanje</p>
-                    <p>Savetovanje</p>
-                    <p>Legalizacija</p>
-                    <p>Statika</p>
-                    <p>Fundiranje</p>
+                    <p>- Projektovanje</p>
+                    <p>- Savetovanje</p>
+                    <p>- Legalizacija</p>
+                    <p>- Statika</p>
+                    <p>- Fundiranje</p>
                 </div>
                 <div className="Column">
 
@@ -30,9 +30,9 @@ const footer = (props) => (
                 </div>
             </div>
             <div className="Row">
-                <div>
-                    <p>Copyright 2020 - Sva prava zadržana - Projektni biro SG-PROJEKT <a href="http://localhost/wordpress/">www.sg-projekt.rs</a></p>
-                </div>
+                
+                    Copyright 2020 - Sva prava zadržana - Projektni biro SG-PROJEKT
+                
             </div>
     </footer>
 );

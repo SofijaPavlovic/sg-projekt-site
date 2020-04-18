@@ -5,7 +5,7 @@
     left: 0;
     margin-right: 0;
     margin-top: 60px;
-    background-color: #3f3f3f;
+    background-color: #424242;
     color: white;
     display: block;
     justify-content: space-between;
@@ -14,15 +14,23 @@
     text-decoration: none;
     
 }
-.Row:first-child {
-    padding: 10px 2%;
+.Row h3 {
+    color: #bfbfbf;
 }
+.Row:first-child {
+    text-align: center;
+    padding-top: 8px;
+}
+
 .Row:last-child {
-    height: 35px;
-    background-color: #272727;
+    height: auto;
+    background-color: #2e2e2e;
     color: black;
     margin-bottom: 0;
     text-align: center;
+    margin-top: 10px;
+    padding-top: 4px;
+    padding-bottom: 6px;
 }
 .Column {
     display: block;
@@ -37,7 +45,7 @@
         /*width: 100%;*/
     }
     .Row:first-child {
-        padding: 10px 5%;
+        text-align: left;
     }
     
     .Column {
@@ -45,5 +53,8 @@
         vertical-align: top;
         width: 33%;
         height: 250px;
+    }
+    .Column h3, p {
+        padding-left: 20px;
     }
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import './ContactInformation.css';
 
 import { MdEmail } from "react-icons/md";
-import Button from '../../../UI/Button/Button';
 
 const infos = {
     phone: ["Telefon:", "+381 24 000 000 ", "+381 69 000 000"],
