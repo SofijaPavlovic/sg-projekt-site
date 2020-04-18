@@ -1,0 +1,50 @@
+.Contact {
+    margin: 0 4%;  
+}
+
+.Informations {
+    width: 30%;
+    min-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 20px;
+}
+
+.Informations h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #3f3f3f;
+    font-weight: bolder;
+}
+
+.Map {
+    vertical-align: top;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: inline-block;
+    width: 61%;
+}
+
+@media (max-width: 950px) {
+    .Map {
+        vertical-align: top;
+        padding-top: 20px;
+        padding-left: 20px;
+        display: inline-block;
+        width: 50%;
+    }
+}
+@media (max-width: 800px) {
+    .Contact {
+        margin: 0 4%;  
+    }
+    .Informations {
+        padding-left: 3px;
+    }
+    .Map {
+        vertical-align: top;
+        padding-top: 20px;
+        padding-left: 3px;
+        width: 95%;
+    }
+}

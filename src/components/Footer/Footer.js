@@ -3,16 +3,16 @@ import './Footer.css';
 
 const footer = (props) => (
     <footer className="Footer">
-        <div className="Row">
-            <div className="Column">
-                <h3>Usluge</h3>
-                <p>Projektovanje</p>
-                <p>Savetovanje</p>
-                <p>Legalizacija</p>
-                <p>Statika</p>
-                <p>Fundiranje</p>
-            </div>
-            <div className="Column">
+            <div className="Row">
+                <div className="Column">
+                    <h3>Usluge</h3>
+                    <p>- Projektovanje</p>
+                    <p>- Savetovanje</p>
+                    <p>- Legalizacija</p>
+                    <p>- Statika</p>
+                    <p>- Fundiranje</p>
+                </div>
+                <div className="Column">
 
                 <h3>Mapa</h3>
                 <iframe
@@ -30,10 +30,10 @@ const footer = (props) => (
                 <p>E-mail: sgprojekt@gmail.com</p>
 
             </div>
-        </div>
-        <div className="Row">
-            <div>
-                <p>Copyright 2020 - Sva prava zadržana - Projektni biro SG-PROJEKT <a href="http://localhost/wordpress/">www.sg-projekt.rs</a></p>
+            <div className="Row">
+                
+                    Copyright 2020 - Sva prava zadržana - Projektni biro SG-PROJEKT
+                
             </div>
         </div>
     </footer>
