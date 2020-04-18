@@ -2,11 +2,11 @@ import React from 'react';
 import './Contact.css';
 import ContactInformations from './ContactInformation/ContactInformation';
 
-const contact = () => (
+const contact = (props) => (
     <div className="Contact">
         <div className="Informations">
             <h1>Kontakt informacije</h1>
-            <ContactInformations />
+            <ContactInformations info={props.info} />
         </div>
 
         <div className="Map" >

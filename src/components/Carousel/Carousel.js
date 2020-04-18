@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import img1 from '../../assets/images/img_1.jpg';
-import img2 from '../../assets/images/img_2.jpg';
+import img2 from '../../assets/images/img_2.jpeg';
 import img3 from '../../assets/images/img_3.jpg';
 
 import './Carousel.css';
@@ -19,15 +19,15 @@ class DemoCarousel extends Component {
                 showThumbs={false}>
                 <div>
                     <img src={img1} alt="img_1.jpg" />
-                    
+                    <p className="legend legendCustom">Fundiranje</p>
                 </div>
                 <div>
                     <img src={img2} alt="img_1.jpg" />
-                    <p className="legend">Legend 2</p>
+                    <p className="legend">Savetovanje</p>
                 </div>
                 <div>
                     <img src={img3} alt="img_1.jpg" />
-                    <p className="legend">Legend 3</p>
+                    <p className="legend">Projektovanje</p>
                 </div>
             </Carousel>
         );
