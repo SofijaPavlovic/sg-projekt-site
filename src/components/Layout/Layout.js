@@ -17,7 +17,8 @@ class Layout extends Component {
     state = {
         showSideDrawer: false,
         contactInfo: null,
-        textAboutUs: null
+        textAboutUs: null,
+        projects: null
     }
 
     componentDidMount() {
@@ -36,11 +37,18 @@ class Layout extends Component {
             });
         axios.get('https://sg-projekt-1cf54.firebaseio.com/about-us.json')
             .then((response) => {
-                this.setState({textAboutUs: response.data});
+                this.setState({ textAboutUs: response.data });
             })
             .catch((error) => {
                 console.log(error);
+            });
+        axios.get('https://sg-projekt-1cf54.firebaseio.com/projects.json')
+            .then((response) => {
+                this.setState({ projects: response.data })
             })
+            .catch((error) => {
+                console.log(error);
+            });
 
     }
 
@@ -63,11 +71,10 @@ class Layout extends Component {
                 {this.props.children}
             </main>
             <Switch>
-                <Route path={"/"} exact render={() => <Home text={this.state.textAboutUs} />} />
+                <Route path={"/"} exact render={() => <Home text={this.state.textAboutUs} projects={this.state.projects}/>} />
                 <Route path={"/onama"} exact render={() => <AboutUs text={this.state.textAboutUs} />} />
-                <Route path={"/projekti"} exact component={Projects} />
+                <Route path={"/projekti"} exact render={() => <Projects projects={this.state.projects} />} />
                 <Route path={"/kontakt"} exact render={() => <Contact info={this.state.contactInfo} />} />
-
             </Switch>
             <Footer />
         </Aux>

@@ -14,7 +14,7 @@ const contact = (props) => (
                 width="100%"
                 height="100%"
                 src="https://maps.google.com/maps?q=Pavla%20%C5%A0tosa%205%2C%20Subotica&t=&z=16&ie=UTF8&iwloc=&output=embed"
-                frameborder="0">
+                frameBorder="0">
             </iframe> 
         </div>
     </div >

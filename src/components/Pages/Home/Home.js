@@ -4,6 +4,22 @@ import classes from './Home.module.css';
 import Image from '../../../assets/images/building1.png';
 
 const home = (props) => {
+
+    let projects = null;
+
+    if (props.projects) {
+        projects = Object.keys(props.projects).map((project, index) => {
+            if (index < 3) {
+                return (
+                    <div className={classes.Column} key={project}>
+                        <img src={Image} alt="Project1" />
+                        <h3>{props.projects[project]['title']}</h3>
+                        <p>{props.projects[project]['text']}</p>
+                    </div>);
+            }
+            return null;
+        });
+    }
     return (
         <React.Fragment>
             <Carousel />
@@ -21,21 +37,7 @@ const home = (props) => {
                 <div className={classes.BreakLine} />
             </div>
             <div className={classes.Row}>
-                <div className={classes.Column}>
-                    <img src={Image} alt="Project1" />
-                    <h3>Hala u Suboticu</h3>
-                    <p>Ovde ide neki tekst o projektu. Askhfdij sjf sj shfak sjhla hs dalnf. Hala se sastoji fidn ddmkf sldjdl.</p>
-                </div>
-                <div className={classes.Column}>
-                    <img src={Image} alt="Project1" />
-                    <h3>Hata Velika 1</h3>
-                    <p>Ovde ide neki tekst o projektu. Askhfdij sjf sj shfak sjhla hs dalnf. Hala se sastoji fidn ddmkf sldjdl.</p>
-                </div>
-                <div className={classes.Column}>
-                    <img src={Image} alt="Project1" />
-                    <h3>Projekat objekta 3</h3>
-                    <p>Ovde ide neki tekst o projektu. Askhfdij sjf sj shfak sjhla hs dalnf. Hala se sastoji fidn ddmkf sldjdl.</p>
-                </div>
+                {projects}
             </div>
         </React.Fragment>
     );
