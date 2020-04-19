@@ -1,0 +1,69 @@
+.AboutUs {
+    margin: 0 5%;
+    color: #3f3f3f;
+    margin-bottom: 40px;
+    
+}
+.AboutUs h2 {
+    font-size: 32px;
+    padding: 0 16px;
+    font-weight: bolder;  
+}
+.AboutUs div{
+    padding: 0 16px;
+    font-size: 20px;
+}
+.BreakLine {
+    border-top: 1px solid #D3D3D3;
+    margin-bottom: 16px;
+    margin-top: -16px;   
+}
+
+.Row {
+    padding-top: 8px;
+    height: auto;
+}
+
+.Row .BreakLine {
+    margin: 0 5%;
+    margin-top: 16px;
+}
+.Row h2 {
+    font-size: 32px;
+    padding: 0 16px;
+    font-weight: bolder;
+    margin: 0 5%;
+    color: #3f3f3f;  
+}
+
+.Column {
+    /*background-color: #f5b5da;
+    border: 1px solid purple;*/
+    display: inline-block;
+    vertical-align: top;
+    width: 33.2%;
+    height: auto;
+}
+.Column img {
+    margin: 0 7%;
+    width: 86%;
+}
+.Column h3 {
+    color: #3f3f3f;
+    margin: 0 7%;
+    margin-top: 10px;
+}
+.Column p {
+    color: #3f3f3f;
+    padding: 0 7%;
+    font-size: 18px;
+}
+
+@media (max-width: 800px) {
+    .Column {
+        display: block;
+        width: auto;
+        height: auto;
+        margin-bottom: 50px;
+    }
+}

@@ -1,21 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
 import './AboutUs.css'
-import axios from 'axios';
 
-const AboutUs = () => {
-    let [text, setText] = useState(null);
-
-    useEffect(() => {
-        axios.get('https://sg-projekt-1cf54.firebaseio.com/about-us.json')
-            .then((response) => {
-                setText(response.data);
-            })
-            .catch((error) => {
-                console.log(error);
-            })
-    },[]);
-
+const AboutUs = (props) => {
 
     return (
         <div>
@@ -44,7 +31,7 @@ const AboutUs = () => {
                 <p>O nama</p>
                 <div className="BreakLine" />
                 <div>
-                    {text}
+                    {props.text}
                 </div>
             
             </div>

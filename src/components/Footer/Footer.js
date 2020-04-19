@@ -30,12 +30,13 @@ const footer = (props) => (
                 <p>E-mail: sgprojekt@gmail.com</p>
 
             </div>
+            </div>
             <div className="Row">
                 
                     Copyright 2020 - Sva prava zadržana - Projektni biro SG-PROJEKT
                 
             </div>
-        </div>
+        
     </footer>
 );
 
