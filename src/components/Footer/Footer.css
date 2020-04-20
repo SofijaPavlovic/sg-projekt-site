@@ -51,10 +51,16 @@
     .Column {
         display: inline-block;
         vertical-align: top;
-        width: 33%;
+        width: 33.2%;
         height: auto;
     }
-    .Column h3, p {
-        padding-left: 20px;
+    .Column h3 {
+        margin: 10px 7% 16px 11%;
+    }
+    .Column p {
+        padding: 0 7%;
+    }
+    .Column iframe {
+        margin: 0 7%;
     }
 }
