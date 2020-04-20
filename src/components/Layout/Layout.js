@@ -76,7 +76,7 @@ class Layout extends Component {
                 <Route path={"/projekti"} exact render={() => <Projects projects={this.state.projects} />} />
                 <Route path={"/kontakt"} exact render={() => <Contact info={this.state.contactInfo} />} />
             </Switch>
-            <Footer />
+            <Footer info={this.state.contactInfo}/>
         </Aux>
         )
     }
