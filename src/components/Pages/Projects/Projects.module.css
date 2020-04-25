@@ -1,3 +1,12 @@
 .Projects {
     margin-top: 78px;
 }
+
+.BreakLine {
+    border-top: 1px solid #D3D3D3;
+    margin: 10px 2%;
+}
+
+.Projects h2 {
+    margin-left: 2%;
+}

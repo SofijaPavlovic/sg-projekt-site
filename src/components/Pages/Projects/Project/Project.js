@@ -1,10 +1,8 @@
 import React from 'react';
 import classes from './Project.module.css'
-import Image from '../../../../assets/images/project1.jpg';
 import Aux from '../../../../hoc/Auxilary';
 
 const project = (props) => {
-
     const isOdd = (index) => {
         return (index % 2) ? true : false;
     }
@@ -35,7 +33,7 @@ const project = (props) => {
 
     const img = (
         <div className={classes.ProjectImage}>
-            <img  src={Image} alt="Project1" />
+            <img  src={props.imgSrc} alt={props.imgSrc} />
         </div>
     );
 

@@ -12,7 +12,7 @@ const home = (props) => {
             if (index < 3) {
                 return (
                     <div className={classes.Column} key={project}>
-                        <img src={Image} alt="Project1" />
+                        <img src={props.projects[project]['imgSrc']} alt="Project_image.jpg" />
                         <h3>{props.projects[project]['title']}</h3>
                         <p>{props.projects[project]['text']}</p>
                     </div>);
