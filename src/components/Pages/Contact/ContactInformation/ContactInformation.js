@@ -13,9 +13,9 @@ const contactInformation = (props) => {
                     {infos[info].map((value, i) => {
                         return <p key={i}>{value}</p>
                     })}
-                    {(info === "mail") ?
+                    {(info === "email") ?
                         <div>
-                            <a href="mailto:abc@example.com">
+                            <a href={`mailto:${infos[info][1]}`}>
                                 <MdEmail id="email_envelop" size={18} /> Pošalji email
                         </a>
                         </div>

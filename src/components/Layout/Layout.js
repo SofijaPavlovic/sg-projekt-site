@@ -22,7 +22,7 @@ class Layout extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://sg-projekt-1cf54.firebaseio.com/contact.json')
+        axios.get('https://sg-projekt-subotica.firebaseio.com/contact.json')
             .then(response => {
                 let contactInfo = {
                     phone: response.data.phone.split(','),
@@ -35,14 +35,14 @@ class Layout extends Component {
             .catch(error => {
                 console.log(error);
             });
-        axios.get('https://sg-projekt-1cf54.firebaseio.com/about-us.json')
+        axios.get('https://sg-projekt-subotica.firebaseio.com/about-us.json')
             .then((response) => {
                 this.setState({ textAboutUs: response.data });
             })
             .catch((error) => {
                 console.log(error);
             });
-        axios.get('https://sg-projekt-1cf54.firebaseio.com/projects.json')
+        axios.get('https://sg-projekt-subotica.firebaseio.com/projects.json')
             .then((response) => {
                 this.setState({ projects: response.data })
             })

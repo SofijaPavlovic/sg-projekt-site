@@ -39,6 +39,7 @@
 .Column {
     /*background-color: #f5b5da;
     border: 1px solid purple;*/
+    margin-top: 20px;
     display: inline-block;
     vertical-align: top;
     width: 33.2%;
