@@ -7,8 +7,10 @@ const AboutUs = (props) => {
     return (
         <div>
             <div className="ServicesLayout">
+            <h2>Usluge</h2>
+            <div className="BreakLine" />
                 <div className="Services">
-                    <h3>Usluge</h3>
+                    
                     <div>
                         <p>Projektovanje</p>
                     </div>
@@ -28,11 +30,11 @@ const AboutUs = (props) => {
                 </div>
             </div>
             <div className="AboutUs">
-                <p>O nama</p>
+                <h2>O nama</h2>
                 <div className="BreakLine" />
-                <div>
+                <p>
                     {props.text}
-                </div>
+                </p>
             
             </div>
         </div>

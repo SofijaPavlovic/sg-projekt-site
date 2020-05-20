@@ -23,6 +23,8 @@ class Projects extends Component {
         }
         return (
             <div className={classes.Projects}>
+                <div className={classes.BackgroundBox}  />
+                <div className={classes.BackgroundBox2}  />
                 <h2>Projekti</h2>
                 <div className={classes.BreakLine} />
                 {projects}

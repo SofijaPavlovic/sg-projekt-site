@@ -1,5 +1,6 @@
 .Projects {
     margin-top: 78px;
+    position: relative;
 }
 
 .BreakLine {
@@ -8,5 +9,38 @@
 }
 
 .Projects h2 {
-    margin-left: 2%;
+    font-size: 32px;
+    padding: 10px 16px 10px 16px;
+    margin: 0 5%;
+    font-weight: bolder;  
+    color: #3f3f3f;
+}
+
+.BackgroundBox {
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 5%;
+    height: 80%;
+    width: 10%;
+    border-left: 2px dashed gray;
+    z-index: 0.1;
+}
+
+.BackgroundBox2 {
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 54%;
+    height: 90%;
+    width: 10%;
+    border-left: 1px dashed gray;
+    z-index: 0.1;
+}
+
+@media(max-width: 700px) {
+    .BackgroundBox {
+        display: none; 
+    }
+    .BackgroundBox2 {
+        display: none; 
+    }
 }

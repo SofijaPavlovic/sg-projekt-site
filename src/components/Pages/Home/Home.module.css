@@ -1,5 +1,5 @@
 .AboutUs {
-    margin: 0 5%;
+    margin: 5px 5%;
     color: #3f3f3f;
     margin-bottom: 40px;
     
@@ -16,7 +16,7 @@
 .BreakLine {
     border-top: 1px solid #D3D3D3;
     margin-bottom: 16px;
-    margin-top: -16px;   
+    margin-top: 8px;   
 }
 
 .Row {

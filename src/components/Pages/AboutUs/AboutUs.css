@@ -1,8 +1,6 @@
-
 .ServicesLayout {
     width: 100%;
-    text-align: center;
-    
+    margin-top: 78px;
 }
 
 .Services {
@@ -11,12 +9,13 @@
     margin: 0 auto;
 
 }
-.Services:first-child {
-    margin-top: 78px;
-}
 
-.Services h3 {
+h2 {
     font-size: 32px;
+    padding: 10px 16px 10px 16px;
+    margin: 0 5%;
+    font-weight: bolder;  
+    color: #3f3f3f;
 }
 
 .Services div {
@@ -38,26 +37,11 @@
 .Services div:hover {
     background-color: silver;
 }
-
-.AboutUs {
-    margin: 0 5%;
-    color: #3f3f3f;
-    
-}
-
 .AboutUs p {
-    font-size: 32px;
-    padding: 0 16px;
-    font-weight: bolder;
-    
+    padding: 10px 16px 10px 16px;
+    margin: 0 5%;
 }
-.AboutUs div{
-    padding: 0 16px;
-}
-
 .BreakLine {
     border-top: 1px solid #D3D3D3;
-    margin-bottom: 16px;
-    margin-top: -16px;
-    
+    margin: 10px 2%; 
 }
